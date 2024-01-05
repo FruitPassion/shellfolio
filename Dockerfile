@@ -1,2 +1,2 @@
-FROM apache
+FROM httpd
 COPY . /var/www/html
