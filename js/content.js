@@ -68,7 +68,7 @@ let postheader = [
 let line_clone = ['<div style="display: flex;"><p class="visiteurcolor">visiteur@shellfolio.fruitpassion.fr: ~$&nbsp;</p><p>','</p>']
 
 let whois = [
-    "<p>"+spacedebut+"Salut, je m'appel Raphael.</p>",
+    "<p>"+spacedebut+"Salut, je m'appelle Raphael.</p>",
     "<p>"+spacedebut+"Je suis un étudiant en informatique orienté en sécurité et web.</p>",
     "<p>"+spacedebut+"A completer...</p>"
 ]
