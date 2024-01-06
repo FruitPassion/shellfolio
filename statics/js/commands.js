@@ -45,7 +45,8 @@ function commandeColor(commande){
 
 function commandeHelp(commande){
     copierligne(commande);
-    iterateList(help, replace=false, header=false);
+    let thelp = help();
+    iterateList(thelp, replace=false, header=false);
 }
 
 function commandeEcho(commande){

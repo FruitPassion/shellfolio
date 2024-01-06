@@ -32,6 +32,8 @@ function random_time() {
     return formattedTime;
 }
 
+
+
 let spacedebut = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
 
@@ -76,17 +78,28 @@ let whois = [
     "<p class='betterlh'>"+spacedebut+"Mon approche polyvalente me permet d'aborder chaque projet avec un souci constant de qualité et de sécurité. Je suis convaincu que la compréhension approfondie des différentes facettes du développement web, du frontend au backend en passant par la sécurité et les opérations système, est essentielle pour livrer des solutions complètes et performantes. Mon engagement envers l'apprentissage continu me pousse à explorer constamment de nouvelles technologies et à les intégrer de manière pertinente dans mes projets.</p>"
 ]
 
-let help = [
-    '<p>'+spacedebut+'<span class="hintcolor">whois</span> : Qui suis-je ?</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">ls</span> : Lister mes projets</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">pwd</span> : Lister mes sites</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">clear</span> : Nettoyer le terminal.</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">color</span> : Permet de changer de theme en choississant parmis les suivants :</p><ul><li>- dracula (par défault)</li><li>- night-owl</li><li>- one-dark</li><li>- one-monokai</li><li>- github-dark</li><li>- atom-one-light</li><li>- bluloco-light</li></ul>',
-    '<p>'+spacedebut+'<span class="hintcolor">echo</span> : Afficher quelque chose.</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">banniere</span> : Afficher la banniere.</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">matrix</span> : Entrez dans la matrice.</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">reboot</span> : Redemarrez la machine.</p>',
-    '<p>'+spacedebut+'<span class="hintcolor">help</span> : Afficher cette commande.</p>'
-]
-
 let colors = ["dracula","night-owl","one-dark","one-monokai","github-dark","atom-one-light","bluloco-light"]
+
+function help(){
+    let themes = "";
+    let currentTheme = document.getElementById('root-colors').href.split("/").pop().split(".")[0];
+    for (const theme of colors) {
+        if (theme == currentTheme){
+            themes += "<li>- <span class='hintcolor'>"+theme+"</span> (selectionné)</li>"
+        } else {
+            themes += "<li>- " + theme + "</li>"
+        }
+    }
+    return [
+        '<p>'+spacedebut+'<span class="hintcolor">whois</span> : Qui suis-je ?</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">ls</span> : Lister mes projets</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">pwd</span> : Lister mes sites</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">clear</span> : Nettoyer le terminal.</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">color</span> : Permet de changer de theme en choississant parmis les suivants :</p><ul>'+themes+'</ul>',
+        '<p>'+spacedebut+'<span class="hintcolor">echo</span> : Afficher quelque chose.</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">banniere</span> : Afficher la banniere.</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">matrix</span> : Entrez dans la matrice.</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">reboot</span> : Redemarrez la machine.</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">help</span> : Afficher cette commande.</p>'
+    ]
+}

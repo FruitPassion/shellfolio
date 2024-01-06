@@ -42,3 +42,15 @@ function ecrire(text){
 function copierligne(commande){
     before.innerHTML += line_clone[0] + commande + line_clone[1];
 }
+
+function generateThemeList(){
+    let themes = "";
+    let currentTheme = document.getElementById('root-colors').href.split('/')[4].split('.')[0]
+    for (const theme of colors) {
+        if (theme == currentTheme){
+            themes += "<li>- <span class='hintcolor'>"+theme+"</span> (selectionné)</li>"
+        } else {
+            themes += "<li>- " + theme + "</li>"
+        }
+    }
+}
