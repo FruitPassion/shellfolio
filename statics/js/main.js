@@ -40,6 +40,20 @@ function gerer_commande(commande){
             copierligne(commande);
             before.innerHTML += "<p>"+spacedebut+"A faire ...</p>";
             break;
+        case 'color':
+            temp = commande.split(" ")[1];
+            if (!temp){
+                copierligne(commande);
+                before.innerHTML += "<p class='errorcolor'>"+spacedebut+"color: vous deviez specifier une couleur</p>";
+            } else if (colors.includes(temp)){
+                document.getElementById('root-colors').href="./statics/css/"+temp+".css"; 
+                copierligne(commande);
+                before.innerHTML += "<p>"+spacedebut+"Couleur changé avec succès en "+temp+"</p>";
+            } else {
+                copierligne(commande);
+                before.innerHTML += "<p class='errorcolor'>"+spacedebut+"color: " + temp + ": couleur non trouvée</p>";
+            }
+            break;
         case 'help':
             copierligne(commande);
             iterateList(help, replace=false, header=false);

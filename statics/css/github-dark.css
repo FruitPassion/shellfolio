@@ -1,0 +1,10 @@
+:root {
+    --background-color: #0D1117;
+    --text-color: #ecf2F8;
+    --blinker-color-one: #89929b;
+    --blinker-color-two: #c6cDD5;
+    --header-color: #7CE38B;
+    --visiteur-color: #cea5fb;
+    --hint-color: #77bdfb;
+    --error-color: #fa7970;
+}

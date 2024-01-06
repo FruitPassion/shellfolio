@@ -5,8 +5,8 @@ body {
     width: 100%;
     min-width: 550px;
     overflow-x: hidden;
-    background-color: #282a36;
-    color: #f8f8f2;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-size: larger;
     font-family: 'VT323', monospace;
 }
@@ -16,30 +16,30 @@ body {
     flex-wrap: wrap;
 }
 
+#before li{
+    padding-left: 50px;
+    list-style: none;
+}
+
 .betterlh{
     line-height: 20px !important;
 }
 
-
-.maincolor{
-    color: #f8f8f2;
-}
-
 .headercolor{
     font-size: medium;
-    color: #ff79c6;
+    color:  var(--header-color);
 }
 
 .visiteurcolor{
-    color: #bd93f9;
+    color:  var(--visiteur-color);
 }
 
 .hintcolor{
-    color: #8be9fd;
+    color:  var(--hint-color);
 }
 
 .errorcolor{
-    color: #ff5555;
+    color:  var(--error-color);
 }
 
 #user-input{
@@ -59,8 +59,8 @@ body {
 #user-input #blinker{
     font-size: 17px;
     height: 20px;
-    color: #e6e6e6;
-    background-color: #ffffff;
+    color: var(--blinker-color-one);
+    background-color: var(--blinker-color-two);
     position: relative;
     opacity: 1;
     width: 10px;

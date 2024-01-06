@@ -81,7 +81,10 @@ let help = [
     '<p>'+spacedebut+'<span class="hintcolor">ls</span> : Lister mes projets</p>',
     '<p>'+spacedebut+'<span class="hintcolor">pwd</span> : Lister mes sites</p>',
     '<p>'+spacedebut+'<span class="hintcolor">clear</span> : Nettoyer le terminal.</p>',
+    '<p>'+spacedebut+'<span class="hintcolor">color</span> : Permet de couleur de theme en choississant parmis les suivants :</p><ul><li>- dracula (par défault)</li><li>- night-owl</li><li>- one-dark</li><li>- one-monokai</li><li>- github-dark</li><li>- atom-one-light</li><li>- bluloco-light</li></ul>',
     '<p>'+spacedebut+'<span class="hintcolor">echo</span> : Afficher quelque chose.</p>',
     '<p>'+spacedebut+'<span class="hintcolor">banniere</span> : Afficher la banniere.</p>',
     '<p>'+spacedebut+'<span class="hintcolor">help</span> : Afficher cette commande.</p>'
 ]
+
+let colors = ["dracula","night-owl","one-dark","one-monokai","github-dark","atom-one-light","bluloco-light"]
