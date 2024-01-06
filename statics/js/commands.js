@@ -1,3 +1,7 @@
+function commandeClear(){
+    before.innerHTML = "";
+}
+
 function commandeVide(commande){
     copierligne(commande);
 }
