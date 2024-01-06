@@ -78,7 +78,7 @@ let whois = [
     "<p class='betterlh'>"+spacedebut+"Mon approche polyvalente me permet d'aborder chaque projet avec un souci constant de qualité et de sécurité. Je suis convaincu que la compréhension approfondie des différentes facettes du développement web, du frontend au backend en passant par la sécurité et les opérations système, est essentielle pour livrer des solutions complètes et performantes. Mon engagement envers l'apprentissage continu me pousse à explorer constamment de nouvelles technologies et à les intégrer de manière pertinente dans mes projets.</p>"
 ]
 
-let colors = ["dracula","night-owl","one-dark","one-monokai","github-dark","atom-one-light","bluloco-light"]
+let colors = ["dracula","night-owl","one-dark","one-monokai","github-dark","atom-one-light","bluloco-light","pinkie-baka"]
 
 function help(){
     let themes = "";
