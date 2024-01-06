@@ -45,6 +45,7 @@ body {
 #user-input{
     display: flex;
     height: 54px;
+    transform: translateY(5px);
 }
 
 #user-input p {
