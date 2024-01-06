@@ -79,6 +79,10 @@ function commandeMatrix(commande){
     document.addEventListener('keyup', handleKeyPress);
 }
 
+function commandeHistory(commande){
+    copierligne(commande);
+    iterateList(commandes, replace=false, header=false);
+}
 
 
 function defaultErreur(commande){
