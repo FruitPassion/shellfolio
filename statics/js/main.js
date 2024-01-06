@@ -15,7 +15,7 @@ useri.addEventListener('keydown', (event) => {
     }
 });
 
-function gerer_commande(commande){
+async function gerer_commande(commande){
     commande = commande.replace(/[\r\n]+/g, "");
     commande = commande.replace(/(&nbsp;)+/g, " ")
     switch (commande.split(" ")[0]) {
@@ -45,6 +45,12 @@ function gerer_commande(commande){
             break;
         case 'echo':
             commandeEcho(commande);
+            break;
+        case 'reboot':
+            commandeReboot();
+            break;
+        case 'matrix':
+            commandeMatrix(commande);
             break;
         default:
             defaultErreur(commande);

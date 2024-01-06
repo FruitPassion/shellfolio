@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onclick="document.getElementById('texter').focus()">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./statics/css/style.css">
         <link rel="icon" href="./statics/image/icone.png">
     </head>
-    <body onclick="document.getElementById('texter').focus()">
+    <body>
         <div id="terminal">
             <div id="before">
             </div>
@@ -26,7 +26,13 @@
                 <span id="typer"></span>
                 <span id="blinker">█</span>
             </div>
+            <div id="canvasPatron" style="opacity: 0;">
+                <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+                <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+                <p id="text-matrix">Appuyer sur Q pour quitter.</p>
+            </div>
         </div>
+        <script src="./statics/js/matrix.js"></script>
         <script src="./statics/js/content.js"></script>
         <script src="./statics/js/commands.js"></script>
         <script src="./statics/js/helpfuncts.js"></script>

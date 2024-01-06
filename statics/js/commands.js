@@ -26,6 +26,8 @@ function commandePwd(commande){
     before.innerHTML += "<p>"+spacedebut+"A faire ...</p>";
 }
 
+
+
 function commandeColor(commande){
     let color_code = commande.split(" ")[1];
     if (!color_code){
@@ -56,7 +58,30 @@ function commandeEcho(commande){
     before.innerHTML += spacedebut+temp;
 }
 
+function commandeReboot(){
+    location.reload();
+}
+
+function commandeMatrix(commande){
+    copierligne(commande);
+    typer.innerText = "";
+    texter.setAttribute("disabled","true");
+    document.getElementById('canvasPatron').style.opacity = "1"
+    function handleKeyPress(event) {
+        if (event.key === 'Q' || event.key === 'q') {
+            document.activeElement,
+            document.getElementById('canvasPatron').style.opacity = "0";
+            texter.removeAttribute("disabled");
+            texter.focus()
+        }
+    }
+    document.addEventListener('keyup', handleKeyPress);
+}
+
+
+
 function defaultErreur(commande){
     copierligne(commande);
     before.innerHTML += "<p class='errorcolor'>"+spacedebut+"shellfolio: " + commande.split(" ")[0] + ": commande non trouvée</p>";
 }
+

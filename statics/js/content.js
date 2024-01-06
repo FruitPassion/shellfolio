@@ -84,6 +84,8 @@ let help = [
     '<p>'+spacedebut+'<span class="hintcolor">color</span> : Permet de changer de theme en choississant parmis les suivants :</p><ul><li>- dracula (par défault)</li><li>- night-owl</li><li>- one-dark</li><li>- one-monokai</li><li>- github-dark</li><li>- atom-one-light</li><li>- bluloco-light</li></ul>',
     '<p>'+spacedebut+'<span class="hintcolor">echo</span> : Afficher quelque chose.</p>',
     '<p>'+spacedebut+'<span class="hintcolor">banniere</span> : Afficher la banniere.</p>',
+    '<p>'+spacedebut+'<span class="hintcolor">matrix</span> : Entrez dans la matrice.</p>',
+    '<p>'+spacedebut+'<span class="hintcolor">reboot</span> : Redemarrez la machine.</p>',
     '<p>'+spacedebut+'<span class="hintcolor">help</span> : Afficher cette commande.</p>'
 ]
 
