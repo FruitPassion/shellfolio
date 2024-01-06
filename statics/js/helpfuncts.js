@@ -33,8 +33,10 @@ function replaceAll(string, search, replace) {
     return string.split(search).join(replace);
 }
 
-function ecrire(text){
-    document.getElementById('typer').innerText = text.replace(/[\r\n]+/g, "");
+function ecrire(text){ 
+    text = text.replace(/ /g, "&nbsp;");
+    text = text.replace(/[\r\n]+/g, "");
+    typer.innerHTML = text;
 }
 
 function copierligne(commande){

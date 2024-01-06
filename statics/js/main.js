@@ -5,21 +5,22 @@ const delay = millis => new Promise((resolve, reject) => {
 let useri = document.getElementById("user-input")
 let texter = document.getElementById('texter')
 let before = document.getElementById("before");
+let typer = document.getElementById('typer');
 
 bootup();
 
 useri.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        gerer_commande(texter.value)
+        gerer_commande(typer.innerHTML)
     }
 });
 
 function gerer_commande(commande){
     commande = commande.replace(/[\r\n]+/g, "");
-    let temp = '';
+    commande = commande.replace(/(&nbsp;)+/g, " ")
     switch (commande.split(" ")[0]) {
         case 'clear':
-            before.innerHTML = "";
+            commandeClear();
             break;
         case '':
             commandeVide(commande);
