@@ -50,7 +50,7 @@ function gerer_commande(commande){
             for (var i = 1; i < commande.length; i++) {
                 temp += commande[i] + ' '
             }
-            before.innerHTML += temp;
+            before.innerHTML += spacedebut+temp;
             break;
         default:
             copierligne(commande);

@@ -13,6 +13,11 @@ body {
 
 #before p {
     line-height: 0;
+    flex-wrap: wrap;
+}
+
+.betterlh{
+    line-height: 20px !important;
 }
 
 

@@ -68,12 +68,12 @@ let postheader = [
 let line_clone = ['<div style="display: flex;"><p class="visiteurcolor">visiteur@shellfolio.fruitpassion.fr: ~$&nbsp;</p><p>','</p>']
 
 let whois = [
-    "<p>"+spacedebut+"Salut, je m'appelle Raphael.</p>",
-    "<p>"+spacedebut+"Je suis un étudiant en informatique orienté en sécurité et web à l'IUT Paul Sabatier.</p>",
-    "<p>"+spacedebut+"Débrouillard et passionné de développement web, je maîtrise HTML, CSS et JS ainsi que des frameworks tels que Flask, Django, Laravel, et Spring MVC côté backend. Du côté frontend, je suis à l'aise avec Angular et React pour créer des interfaces utilisateur interactives.</p>",
-    "<p>"+spacedebut+"En matière de sécurité, j'intègre des pratiques solides pour protéger les applications que je développe. J'utilise Git pour la gestion des versions et Docker pour la conteneurisation, facilitant ainsi le déploiement.</p>",
-    "<p>"+spacedebut+"Familiarisé avec Linux, je suis à l'aise dans la configuration et la gestion des environnements serveur. Mon expérience m'a permis de travailler sur des solutions robustes et sécurisées, en mettant en œuvre des protocoles adaptés et en assurant la surveillance proactive des systèmes.</p>",
-    "<p>"+spacedebut+"Mon approche polyvalente me permet d'aborder chaque projet avec un souci constant de qualité et de sécurité. Je suis convaincu que la compréhension approfondie des différentes facettes du développement web, du frontend au backend en passant par la sécurité et les opérations système, est essentielle pour livrer des solutions complètes et performantes. Mon engagement envers l'apprentissage continu me pousse à explorer constamment de nouvelles technologies et à les intégrer de manière pertinente dans mes projets.</p>"
+    "<p class='betterlh'>"+spacedebut+"Salut, je m'appelle Raphael.</p>",
+    "<p class='betterlh'>"+spacedebut+"Je suis un étudiant en informatique orienté en sécurité et web à l'IUT Paul Sabatier.</p>",
+    "<p class='betterlh'>"+spacedebut+"Débrouillard et passionné de développement web, je maîtrise HTML, CSS et JS ainsi que des frameworks tels que Flask, Django, Laravel, et Spring MVC côté backend. Du côté frontend, je suis à l'aise avec Angular et React pour créer des interfaces utilisateur interactives.</p>",
+    "<p class='betterlh'>"+spacedebut+"En matière de sécurité, j'intègre des pratiques solides pour protéger les applications que je développe. J'utilise Git pour la gestion des versions et Docker pour la conteneurisation, facilitant ainsi le déploiement.</p>",
+    "<p class='betterlh'>"+spacedebut+"Familiarisé avec Linux, je suis à l'aise dans la configuration et la gestion des environnements serveur. Mon expérience m'a permis de travailler sur des solutions robustes et sécurisées, en mettant en œuvre des protocoles adaptés et en assurant la surveillance proactive des systèmes.</p>",
+    "<p class='betterlh'>"+spacedebut+"Mon approche polyvalente me permet d'aborder chaque projet avec un souci constant de qualité et de sécurité. Je suis convaincu que la compréhension approfondie des différentes facettes du développement web, du frontend au backend en passant par la sécurité et les opérations système, est essentielle pour livrer des solutions complètes et performantes. Mon engagement envers l'apprentissage continu me pousse à explorer constamment de nouvelles technologies et à les intégrer de manière pertinente dans mes projets.</p>"
 ]
 
 let help = [
