@@ -68,10 +68,12 @@ function commandeMatrix(commande){
     typer.innerText = "";
     texter.setAttribute("disabled","true");
     document.getElementById('canvasPatron').style.opacity = "1"
+    before.hidden = true;
     function handleKeyPress(event) {
         if (event.key === 'Q' || event.key === 'q') {
             document.activeElement,
             document.getElementById('canvasPatron').style.opacity = "0";
+            before.hidden = false;
             texter.removeAttribute("disabled");
             texter.focus()
         }
@@ -82,6 +84,10 @@ function commandeMatrix(commande){
 function commandeHistory(commande){
     copierligne(commande);
     iterateList(commandes, replace=false, header=false);
+}
+
+function commandeShutdown(commande){
+    window.open('','_self').close()
 }
 
 

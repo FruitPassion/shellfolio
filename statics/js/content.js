@@ -100,6 +100,7 @@ function help(){
         '<p>'+spacedebut+'<span class="hintcolor">banniere</span> : Afficher la banniere.</p>',
         '<p>'+spacedebut+'<span class="hintcolor">matrix</span> : Entrez dans la matrice.</p>',
         '<p>'+spacedebut+'<span class="hintcolor">reboot</span> : Redemarrez la machine.</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">shutdown</span> : Etindre la machine.</p>',
         '<p>'+spacedebut+'<span class="hintcolor">help</span> : Afficher cette commande.</p>',
         '<p>'+spacedebut+'<span class="hintcolor">history</span> : Afficher l\'historique des commandes.</p>'
     ]

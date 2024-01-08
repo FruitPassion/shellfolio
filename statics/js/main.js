@@ -21,6 +21,8 @@ useri.addEventListener('keydown', (event) => {
             index_commandes -= 1;
             texter.value = commandes_history[index_commandes];
             typer.innerHTML = commandes_history[index_commandes];
+            const end = typer.innerHTML.length;
+            typer.setSelectionRange(end, end);
         }
     } else if (event.key === 'ArrowDown') {
         if (index_commandes < commandes_history.length-1){
@@ -70,6 +72,9 @@ async function gerer_commande(commande){
             break;
         case 'history':
             commandeHistory(commande);
+            break;
+        case 'shutdown':
+            commandeShutdown(commande);
             break;
         default:
             defaultErreur(commande);
