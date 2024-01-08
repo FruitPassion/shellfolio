@@ -86,10 +86,6 @@ function commandeHistory(commande){
     iterateList(commandes, replace=false, header=false);
 }
 
-function commandeShutdown(commande){
-    window.open('','_self').close()
-}
-
 
 function defaultErreur(commande){
     copierligne(commande);

@@ -73,9 +73,6 @@ async function gerer_commande(commande){
         case 'history':
             commandeHistory(commande);
             break;
-        case 'shutdown':
-            commandeShutdown(commande);
-            break;
         default:
             defaultErreur(commande);
     }
