@@ -32,7 +32,7 @@ function commandeColor(commande){
     let color_code = commande.split(" ")[1];
     if (!color_code){
         copierligne(commande);
-        before.innerHTML += "<p class='errorcolor'>"+spacedebut+"color: vous deviez specifier une couleur</p>";
+        before.innerHTML += "<p class='errorcolor'>"+spacedebut+"color: vous devez specifier une couleur</p>";
     } else if (colors.includes(color_code)){
         document.getElementById('root-colors').href="./statics/css/"+color_code+".css"; 
         copierligne(commande);

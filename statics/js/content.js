@@ -92,8 +92,8 @@ function help(){
     }
     return [
         '<p>'+spacedebut+'<span class="hintcolor">whois</span> : Qui suis-je ?</p>',
-        '<p>'+spacedebut+'<span class="hintcolor">ls</span> : Lister mes projets</p>',
-        '<p>'+spacedebut+'<span class="hintcolor">pwd</span> : Lister mes sites</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">ls</span> : Liste de mes projets</p>',
+        '<p>'+spacedebut+'<span class="hintcolor">pwd</span> : Liste de mes sites</p>',
         '<p>'+spacedebut+'<span class="hintcolor">clear</span> : Nettoyer le terminal.</p>',
         '<p>'+spacedebut+'<span class="hintcolor">color</span> : Permet de changer de theme en choississant parmis les suivants :</p><ul>'+themes+'</ul>',
         '<p>'+spacedebut+'<span class="hintcolor">echo</span> : Afficher quelque chose.</p>',
